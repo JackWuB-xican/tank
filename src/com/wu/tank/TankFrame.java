@@ -76,12 +76,18 @@ public class TankFrame extends Frame {
                      break;
                  default:break;
              }
+             setMainTankDir();
          }
          public void setMainTankDir(){
-             if(bL) myTank.setDir(Dir.LEFT);
-             if(bR) myTank.setDir(Dir.RIGHT);
-             if(bU) myTank.setDir(Dir.UP);
-             if(bD) myTank.setDir(Dir.DOWN);
+             if(!bL && !bR && !bD && !bU){
+                 myTank.setMoving(false);
+             }else {
+                 myTank.setMoving(true);
+                 if (bL) myTank.setDir(Dir.LEFT);
+                 if (bR) myTank.setDir(Dir.RIGHT);
+                 if (bU) myTank.setDir(Dir.UP);
+                 if (bD) myTank.setDir(Dir.DOWN);
+             }
          }
      }
 }
