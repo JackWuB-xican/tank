@@ -5,13 +5,15 @@ import java.awt.*;
 public class Tank {
     private int x,y;
     private Dir dir;
-    private static final int SPEED = 5;
     private boolean moving = false;
+    private TankFrame tf ;
+    private static final int SPEED = 5;
     private static final  int TANK_WIDTH=50,TANK_HEIGHT=50;
-    public Tank(int x,int y,Dir dir){
+    public Tank(int x,int y,Dir dir,TankFrame tf){
          this.x = x;
          this.y = y;
          this.dir = dir;
+         this.tf = tf;
     }
 
     public boolean isMoving() {
@@ -71,5 +73,7 @@ public class Tank {
             default:break;
         }
     }
-
+    public void fire() {
+       tf.bulletList.add(new Bullet(this.x,this.y,this.dir,this.tf));
+    }
 }

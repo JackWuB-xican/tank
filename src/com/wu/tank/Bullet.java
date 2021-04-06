@@ -8,13 +8,16 @@ import java.awt.*;
 public class Bullet {
     private int x,y;
     private Dir dir;
+    private boolean live = true;
+    private TankFrame tf;
     private static final int SPEED = 10;
     private final int WIDTH = 5,HEIGHT = 5;
 
-    public Bullet(int x, int y, Dir dir) {
+    public Bullet(int x, int y, Dir dir,TankFrame tf) {
         this.x = x;
         this.y = y;
         this.dir = dir;
+        this.tf = tf;
     }
     //--------------------------setter and getter start--------------------------------------------
     public int getX() {
@@ -42,6 +45,9 @@ public class Bullet {
     }
     //--------------------------setter and getter end--------------------------------------------
     public void paint(Graphics g){
+        if(!live){
+            tf.bulletList.remove(this);
+        }
         Color color = g.getColor();
         g.setColor(Color.RED);
         g.fillOval(x,y,WIDTH,HEIGHT);
@@ -63,6 +69,9 @@ public class Bullet {
                 x+=SPEED;
                 break;
             default:break;
+        }
+        if(x<0 || y<0 || x>TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT){
+            live = false;
         }
     }
 }
