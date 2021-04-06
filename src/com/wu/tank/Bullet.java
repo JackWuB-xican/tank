@@ -2,25 +2,21 @@ package com.wu.tank;
 
 import java.awt.*;
 
-public class Tank {
+/**
+ * 子弹类
+ */
+public class Bullet {
     private int x,y;
     private Dir dir;
-    private static final int SPEED = 5;
-    private boolean moving = false;
-    public Tank(int x,int y,Dir dir){
-         this.x = x;
-         this.y = y;
-         this.dir = dir;
-    }
+    private static final int SPEED = 10;
+    private final int WIDTH = 5,HEIGHT = 5;
 
-    public boolean isMoving() {
-        return moving;
+    public Bullet(int x, int y, Dir dir) {
+        this.x = x;
+        this.y = y;
+        this.dir = dir;
     }
-
-    public void setMoving(boolean moving) {
-        this.moving = moving;
-    }
-
+    //--------------------------setter and getter start--------------------------------------------
     public int getX() {
         return x;
     }
@@ -44,13 +40,15 @@ public class Tank {
     public void setDir(Dir dir) {
         this.dir = dir;
     }
-
-    public void paint(Graphics g) {
-        g.fillRect(x,y,50,50);
+    //--------------------------setter and getter end--------------------------------------------
+    public void paint(Graphics g){
+        Color color = g.getColor();
+        g.setColor(Color.RED);
+        g.fillOval(x,y,WIDTH,HEIGHT);
+        g.setColor(color);
         move();
     }
-    public void move(){
-     if(!moving)return;
+    private void move(){
         switch (dir){
             case DOWN:
                 y+=SPEED;
@@ -67,5 +65,4 @@ public class Tank {
             default:break;
         }
     }
-
 }

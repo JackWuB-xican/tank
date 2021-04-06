@@ -8,8 +8,7 @@ import java.awt.event.WindowEvent;
 
 public class TankFrame extends Frame {
     Tank myTank = new Tank(200,200,Dir.DOWN);
-    private static final int SPEED = 10;
-    Dir dir = Dir.DOWN;
+    Bullet bullet = new Bullet(300,300,Dir.DOWN);
      public TankFrame(){
          this.setSize(600,400);
          this.setTitle("Tank war");
@@ -26,6 +25,7 @@ public class TankFrame extends Frame {
      @Override
      public void paint(Graphics g){
          myTank.paint(g);
+         bullet.paint(g);
 //         g.fillRect(x,y,50,50);
 //         x+=10;
 //         y+=10;
