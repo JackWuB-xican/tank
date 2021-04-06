@@ -7,6 +7,7 @@ public class Tank {
     private Dir dir;
     private static final int SPEED = 5;
     private boolean moving = false;
+    private static final  int TANK_WIDTH=50,TANK_HEIGHT=50;
     public Tank(int x,int y,Dir dir){
          this.x = x;
          this.y = y;
@@ -46,7 +47,10 @@ public class Tank {
     }
 
     public void paint(Graphics g) {
-        g.fillRect(x,y,50,50);
+        Color color = g.getColor();
+        g.setColor(Color.yellow);
+        g.fillRect(x,y,TANK_WIDTH,TANK_HEIGHT);
+        g.setColor(color);
         move();
     }
     public void move(){

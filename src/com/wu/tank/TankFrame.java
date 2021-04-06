@@ -9,8 +9,9 @@ import java.awt.event.WindowEvent;
 public class TankFrame extends Frame {
     Tank myTank = new Tank(200,200,Dir.DOWN);
     Bullet bullet = new Bullet(300,300,Dir.DOWN);
+    static final int GAME_WIDTH = 800,GAME_HEIGHT = 600;
      public TankFrame(){
-         this.setSize(600,400);
+         this.setSize(GAME_WIDTH,GAME_HEIGHT);
          this.setTitle("Tank war");
          this.setResizable(false);
          this.setVisible(true);
@@ -22,14 +23,29 @@ public class TankFrame extends Frame {
              }
          });
      }
+    Image offScreenImage = null;
+    @Override
+    /**
+     * 双缓冲发处理闪烁
+     */
+    public void update(Graphics g){
+        if(offScreenImage == null){
+            offScreenImage = this.createImage(GAME_WIDTH,GAME_HEIGHT);
+        }
+        Graphics goffScreenImage = offScreenImage.getGraphics();
+        Color color = goffScreenImage.getColor();
+        goffScreenImage.setColor(Color.BLACK);
+        goffScreenImage.fillRect(0,0,GAME_WIDTH,GAME_HEIGHT);
+        goffScreenImage.setColor(color);
+        paint(goffScreenImage);
+        g.drawImage(offScreenImage,0,0,null);
+    }
      @Override
      public void paint(Graphics g){
          myTank.paint(g);
          bullet.paint(g);
-//         g.fillRect(x,y,50,50);
-//         x+=10;
-//         y+=10;
      }
+
      class MyKeyListener extends KeyAdapter {
          boolean bL = false;
          boolean bR = false;
