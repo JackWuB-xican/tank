@@ -6,6 +6,7 @@ public class Tank {
     private int x,y;
     private Dir dir;
     private boolean moving = false;
+    private boolean live = true;
     private TankFrame tf ;
     private static final int SPEED = 5;
     private static final  int TANK_WIDTH=50,TANK_HEIGHT=50;
@@ -51,6 +52,9 @@ public class Tank {
     }
 
     public void paint(Graphics g) {
+        if(!live){
+            tf.tanks.remove(this);
+        }
         switch (dir){
             case RIGHT:
                 g.drawImage(ResourceMrg.tankR,x,y,null);
@@ -94,5 +98,9 @@ public class Tank {
         int bX = this.x +  Tank.WIDTH/2 - Bullet.WIDTH/2;
         int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
        tf.bulletList.add(new Bullet(bX,bY,this.dir,this.tf));
+    }
+
+    public void die() {
+        this.live = false;
     }
 }
