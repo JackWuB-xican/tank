@@ -11,8 +11,8 @@ public class Bullet {
     private boolean live = true;
     private TankFrame tf;
     private static final int SPEED = 10;
-    public  int WIDTH = ResourceMrg.bullelD.getWidth();
-    public int HEIGHT = ResourceMrg.bullelD.getHeight();
+    public static int WIDTH = ResourceMrg.bullelD.getWidth();
+    public static int HEIGHT = ResourceMrg.bullelD.getHeight();
 
     public Bullet(int x, int y, Dir dir,TankFrame tf) {
         this.x = x;
