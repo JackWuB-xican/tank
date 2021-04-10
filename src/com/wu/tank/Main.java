@@ -7,7 +7,10 @@ import java.awt.event.WindowEvent;
 public class Main {
     public static void main(String [] args) throws InterruptedException {
         TankFrame tankFrame = new TankFrame();
-        for(int i=0;i<5;i++){
+//        PropertyMgr p = new PropertyMgr();
+
+        int initCount =Integer.parseInt((String)PropertyMgr.get("initCount"));
+        for(int i=0;i<initCount;i++){
             tankFrame.tanks.add(new Tank(50 + i*80,200,Dir.DOWN,Group.BAD,tankFrame));
         }
         while(true){
