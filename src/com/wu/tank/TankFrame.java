@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TankFrame extends Frame {
-    Tank myTank = new Tank(200,400,Dir.DOWN,this);
+    Tank myTank = new Tank(200,400,Dir.DOWN,Group.GOOD,this);
     List<Bullet> bulletList = new ArrayList<>();
     List<Tank> tanks = new ArrayList<>();
-//    Bullet bullet = new Bullet(300,300,Dir.DOWN);
-    static final int GAME_WIDTH = 800,GAME_HEIGHT = 600;
+    List<Explode> explodes = new ArrayList<>();
+    static final int GAME_WIDTH = 1080,GAME_HEIGHT = 960;
      public TankFrame(){
          this.setSize(GAME_WIDTH,GAME_HEIGHT);
          this.setTitle("Tank war");
@@ -63,6 +63,10 @@ public class TankFrame extends Frame {
                  bulletList.get(i).collideWith(tanks.get(j));
              }
          }
+         for(int i=0;i<explodes.size();i++){
+             explodes.get(i).paint(g);
+         }
+//         explode.paint(g);
      }
 
      class MyKeyListener extends KeyAdapter {

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2aea1107-115e-4775-8d78-24d068937355" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/META-INF/tank.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Bullet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Bullet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Dir.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/ResourceMrg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Tank$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/Tank.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/TankFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/wu/tank/TankFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wu/tank/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wu/tank/Explode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wu/tank/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wu/tank/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wu/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wu/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wu/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wu/tank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wu/tank/ResourceMrg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wu/tank/ResourceMrg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wu/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wu/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wu/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wu/tank/TankFrame.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\tank\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qkHrm34WyMnNSR3iflvQDlzCXw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/wu/tank" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wu.tank" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\tank\src\com\wu\tank" />
+      <recent name="F:\tank\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wu.tank.Main" />
+      <module name="tank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wu.tank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aea1107-115e-4775-8d78-24d068937355" name="Default Changelist" comment="" />
+      <created>1617616868516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617616868516</updated>
+      <workItem from="1617616872161" duration="13444000" />
+      <workItem from="1617672643439" duration="8951000" />
+      <workItem from="1617695450980" duration="4477000" />
+      <workItem from="1617759684946" duration="14503000" />
+      <workItem from="1617971814811" duration="4860000" />
+    </task>
+    <task id="LOCAL-00001" summary="坦克大战第一次提交">
+      <created>1617634127592</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617634127592</updated>
+    </task>
+    <task id="LOCAL-00002" summary="坦克大战第一次提交">
+      <created>1617638168144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617638168144</updated>
+    </task>
+    <task id="LOCAL-00003" summary="抽象出坦克类，封装坦克">
+      <created>1617673644674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617673644674</updated>
+    </task>
+    <task id="LOCAL-00004" summary="抽象出坦克类，封装坦克">
+      <created>1617673693475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617673693475</updated>
+    </task>
+    <task id="LOCAL-00005" summary="坦克静止移动">
+      <created>1617675139113</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617675139113</updated>
+    </task>
+    <task id="LOCAL-00006" summary="子弹类定义发射子弹">
+      <created>1617677067845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617677067845</updated>
+    </task>
+    <task id="LOCAL-00007" summary="双缓冲处理闪烁问题">
+      <created>1617692795949</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617692795949</updated>
+    </task>
+    <task id="LOCAL-00008" summary="多颗子弹">
+      <created>1617697162228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617697162228</updated>
+    </task>
+    <task id="LOCAL-00009" summary="建立ResourceMrg类管理图片">
+      <created>1617780910060</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617780910060</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加子弹图片并调整子弹位置">
+      <created>1617782019884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617782019884</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加子弹图片并调整子弹位置">
+      <created>1617782216879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617782216879</updated>
+    </task>
+    <task id="LOCAL-00012" summary="消灭敌人坦克，碰撞检测">
+      <created>1617784302919</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617784302919</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="坦克大战第一次提交" />
+    <MESSAGE value="抽象出坦克类，封装坦克" />
+    <MESSAGE value="坦克静止移动" />
+    <MESSAGE value="子弹类定义发射子弹" />
+    <MESSAGE value="双缓冲处理闪烁问题" />
+    <MESSAGE value="多颗子弹" />
+    <MESSAGE value="建立ResourceMrg类管理图片" />
+    <MESSAGE value="添加子弹图片并调整子弹位置" />
+    <MESSAGE value="消灭敌人坦克，碰撞检测" />
+    <option name="LAST_COMMIT_MESSAGE" value="消灭敌人坦克，碰撞检测" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Project_Structure" timestamp="1617617145619">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1617617145619" />
+    <state x="399" y="106" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1617640238038">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="399" y="106" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1617640238038" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1617785678827">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617785678827" />
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1617616960650">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="94" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1617616960650" />
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1617784300654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617784300654" />
+    <state x="147" y="71" key="DiffContextDialog" timestamp="1617693134957">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1617693134957" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1617844693660">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617844693660" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1618020598921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618020598921" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1618020598920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618020598920" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1618020598920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618020598920" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1618020598920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618020598920" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1617636445818">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617636445818" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1617782225328">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617782225328" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1617759725109">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1617759725109" />
+    <state x="457" y="44" width="621" height="735" key="find.popup" timestamp="1617616978382">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="44" width="621" height="735" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1617616978382" />
+    <state x="478" y="215" key="git4idea.merge.GitPullDialog" timestamp="1617697171703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1617697171703" />
+    <state x="178" y="29" key="new project wizard" timestamp="1617844696173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="29" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1617844696173" />
+  </component>
+</project>
