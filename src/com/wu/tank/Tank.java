@@ -11,6 +11,7 @@ public class Tank {
     private Group group = Group.GOOD;
     private TankFrame tf ;
     private Random random = new Random();
+    private Rectangle rectangle = new Rectangle();
     private static final int SPEED = 5;
     private static final  int TANK_WIDTH=50,TANK_HEIGHT=50;
     public  static int WIDTH = ResourceMrg.goodTankL.getWidth();
@@ -21,6 +22,10 @@ public class Tank {
          this.dir = dir;
          this.group = group;
          this.tf = tf;
+        rectangle.x = x;
+        rectangle.y = y;
+        rectangle.height = HEIGHT;
+        rectangle.width = WIDTH;
     }
 
     public boolean isMoving() {
@@ -53,6 +58,14 @@ public class Tank {
 
     public void setDir(Dir dir) {
         this.dir = dir;
+    }
+
+    public Rectangle getRectangle() {
+        return rectangle;
+    }
+
+    public void setRectangle(Rectangle rectangle) {
+        this.rectangle = rectangle;
     }
 
     public Group getGroup() {
@@ -106,10 +119,10 @@ public class Tank {
         if(this.group == Group.BAD && random.nextInt(100)>95){
             rankDir();
         }
-//        if(x<0 || y<0 || x>TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT){
-//            live = false;
-//        }
         boundCheck();
+        //update rectangle
+        rectangle.x = this.x;
+        rectangle.y = this.y;
     }
 
     private void boundCheck() {

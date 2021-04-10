@@ -11,6 +11,7 @@ public class Bullet {
     private boolean live = true;
     private TankFrame tf;
     private Group group = Group.BAD;
+    public Rectangle rectangle = new Rectangle();
     private static final int SPEED = 10;
     public static int WIDTH = ResourceMrg.bullelD.getWidth();
     public static int HEIGHT = ResourceMrg.bullelD.getHeight();
@@ -21,6 +22,10 @@ public class Bullet {
         this.dir = dir;
         this.group = group;
         this.tf = tf;
+        rectangle.x = x;
+        rectangle.y = y;
+        rectangle.height = HEIGHT;
+        rectangle.width = WIDTH;
     }
     //--------------------------setter and getter start--------------------------------------------
     public int getX() {
@@ -74,10 +79,6 @@ public class Bullet {
                 g.drawImage(ResourceMrg.bulletU,x,y,null);
                 break;
         }
-//        Color color = g.getColor();
-//        g.setColor(Color.RED);
-//        g.fillOval(x,y,WIDTH,HEIGHT);
-//        g.setColor(color);
 
         move();
     }
@@ -97,6 +98,9 @@ public class Bullet {
                 break;
             default:break;
         }
+        //update rectangle
+        rectangle.x = this.x;
+        rectangle.y = this.y;
         if(x<0 || y<0 || x>TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT){
             live = false;
         }
@@ -104,11 +108,11 @@ public class Bullet {
 
     public void collideWith(Tank tank) {
         if(this.group == tank.getGroup()) return;
-        Rectangle rec1 = new Rectangle(this.x,this.y,WIDTH,HEIGHT);
-        Rectangle rec2 = new Rectangle(tank.getX(),tank.getY(),Tank.WIDTH,Tank.HEIGHT);
+//        Rectangle rec1 = new Rectangle(this.x,this.y,WIDTH,HEIGHT);
+//        Rectangle rec2 = new Rectangle(tank.getX(),tank.getY(),Tank.WIDTH,Tank.HEIGHT);
         int eX = tank.getX() +  Tank.WIDTH/2 - Explode.WIDTH/2;
         int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-        if(rec1.intersects(rec2)){
+        if(rectangle.intersects(tank.getRectangle())){
            tank.die();
            this.die();
            tf.explodes.add(new Explode(eX,eY,tf));
