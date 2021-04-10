@@ -106,10 +106,12 @@ public class Bullet {
         if(this.group == tank.getGroup()) return;
         Rectangle rec1 = new Rectangle(this.x,this.y,WIDTH,HEIGHT);
         Rectangle rec2 = new Rectangle(tank.getX(),tank.getY(),Tank.WIDTH,Tank.HEIGHT);
+        int eX = tank.getX() +  Tank.WIDTH/2 - Explode.WIDTH/2;
+        int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
         if(rec1.intersects(rec2)){
            tank.die();
            this.die();
-           tf.explodes.add(new Explode(x,y,tf));
+           tf.explodes.add(new Explode(eX,eY,tf));
         }
     }
 

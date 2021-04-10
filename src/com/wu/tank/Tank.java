@@ -13,8 +13,8 @@ public class Tank {
     private Random random = new Random();
     private static final int SPEED = 5;
     private static final  int TANK_WIDTH=50,TANK_HEIGHT=50;
-    public  static int WIDTH = ResourceMrg.tankL.getWidth();
-    public static int HEIGHT = ResourceMrg.tankL.getHeight();
+    public  static int WIDTH = ResourceMrg.goodTankL.getWidth();
+    public static int HEIGHT = ResourceMrg.goodTankL.getHeight();
     public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
          this.x = x;
          this.y = y;
@@ -69,23 +69,18 @@ public class Tank {
         }
         switch (dir){
             case RIGHT:
-                g.drawImage(ResourceMrg.tankR,x,y,null);
+                g.drawImage((this.group == Group.GOOD?ResourceMrg.goodTankR : ResourceMrg.badTankR),x,y,null);
                 break;
             case LEFT:
-                g.drawImage(ResourceMrg.tankL,x,y,null);
+                g.drawImage((this.group == Group.GOOD?ResourceMrg.goodTankL : ResourceMrg.badTankL),x,y,null);
                 break;
             case DOWN:
-                g.drawImage(ResourceMrg.tankD,x,y,null);
+                g.drawImage((this.group == Group.GOOD?ResourceMrg.goodTankD : ResourceMrg.badTankD),x,y,null);
                 break;
             case UP:
-                g.drawImage(ResourceMrg.tankU,x,y,null);
+                g.drawImage((this.group == Group.GOOD?ResourceMrg.goodTankU : ResourceMrg.badTankU),x,y,null);
                 break;
         }
-//         g.drawImage(ResourceMrg.tankL,x,y,null);
-//        Color color = g.getColor();
-//        g.setColor(Color.yellow);
-//        g.fillRect(x,y,TANK_WIDTH,TANK_HEIGHT);
-//        g.setColor(color);
         move();
     }
     public void move(){
@@ -111,10 +106,19 @@ public class Tank {
         if(this.group == Group.BAD && random.nextInt(100)>95){
             rankDir();
         }
-        if(x<0 || y<0 || x>TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT){
-            live = false;
-        }
+//        if(x<0 || y<0 || x>TankFrame.GAME_WIDTH || y>TankFrame.GAME_HEIGHT){
+//            live = false;
+//        }
+        boundCheck();
     }
+
+    private void boundCheck() {
+        if(this.x <2) x=2;
+        if(this.y <28) y=28;
+        if(this.x>TankFrame.GAME_WIDTH - Tank.WIDTH -2) x=TankFrame.GAME_WIDTH - Tank.WIDTH -2;
+        if(this.y>TankFrame.GAME_HEIGHT - Tank.HEIGHT -2) y=TankFrame.GAME_HEIGHT-Tank.HEIGHT-2;
+    }
+
     public void fire() {
         int bX = this.x +  Tank.WIDTH/2 - Bullet.WIDTH/2;
         int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
